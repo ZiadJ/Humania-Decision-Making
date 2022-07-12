@@ -1,13 +1,3 @@
----
-title: Humania Decision-Making
-description: An ExpressJS server that uses Prisma to connect to a PostgreSQL database
-tags:
-  - express
-  - postgresql
-  - prisma
-  - typescript
----
-
 # Group decision-making system 
 
 This is a prototypal system for making decisions collectively based on needs/wants vs. resource availability
