@@ -8,9 +8,9 @@ tags:
   - typescript
 ---
 
-# ExpressJS Prisma Example
+# Group decision-making system 
 
-This is an [ExpressJS](https://expressjs.com/) REST API that uses [Prisma](https://www.prisma.io/) to connect to a Postgres database and CRUD todos.
+This is a prototypal system for making decisions collectively based on needs/wants vs. resource availability
 
 
 ## 💁‍♀️ How to use
