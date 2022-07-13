@@ -33,8 +33,11 @@ app.post("/todos", async (req, res) => {
       text: req.body.text ?? "Empty todo",
     },
   });
-
-  return res.json(req);
+    
+    try {
+      console.log(JSON.stringify(req));
+    } catch (e) {}
+  return res.json('test');
 });
 
 app.get("/todos/:id", async (req, res) => {
