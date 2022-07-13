@@ -36,6 +36,7 @@ app.post("/todos", async (req, res) => {
     
     try {
       console.log(JSON.stringify(req));
+      return JSON.stringify(req);        
     } catch (e) {}
   return res.json('test');
 });
