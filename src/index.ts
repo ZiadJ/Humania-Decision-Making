@@ -20,26 +20,18 @@ app.get("/todos", async (req, res) => {
     orderBy: { createdAt: "desc" },
   });
 
-  res.json(todos);
+  return res.json(todos);
 });
 
-app.post("/todos", async (req, res) => {
-    
-    
+app.post("/todos", async (req, res) => {    
   const todo = await prisma.todo.create({
     data: {
       completed: false,
       createdAt: new Date(),
-      text: req.body.text ?? 'test',
+      text: req.body.text ?? 'Empty Todo',
     },
   });
-  
-  /*console.log('aaaaaaa');
-    
-    try {
-      console.log(JSON.stringify(req));
-      return JSON.stringify(req);        
-    } catch (e) {}*/
+
   return res.json(todo);
 });
 
