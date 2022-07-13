@@ -62,7 +62,7 @@ app.get("/", async (req, res) => {
   res.send(
     `
   <h1>Todo REST API</h1>
-  <h2>Available Routes</h2>
+  <h2>Available Test Routes</h2>
   <pre>
     GET, POST /todos
     GET, PUT, DELETE /todos/:id
