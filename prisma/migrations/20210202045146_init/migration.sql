@@ -4,6 +4,7 @@ CREATE TABLE "Todo" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "text" TEXT NOT NULL,
     "completed" BOOLEAN NOT NULL,
+    "test" BOOLEAN NOT NULL,
 
     PRIMARY KEY ("id")
 );
