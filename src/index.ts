@@ -30,17 +30,17 @@ app.post("/todos", async (req, res) => {
     data: {
       completed: false,
       createdAt: new Date(),
-      text: JSON.stringify(req),
+      text: req.body.text ?? 'test',
     },
   });
   
-  console.log('aaaaaaa');
+  /*console.log('aaaaaaa');
     
     try {
       console.log(JSON.stringify(req));
       return JSON.stringify(req);        
-    } catch (e) {}
-  return res.json(JSON.stringify(req ? req : 'aaa'));
+    } catch (e) {}*/
+  return res.json(todo);
 });
 
 app.get("/todos/:id", async (req, res) => {
