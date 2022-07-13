@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
+
+const cors = require('cors');
 app.use(cors({
     origin: '*'
 }));
