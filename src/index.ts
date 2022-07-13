@@ -33,6 +33,8 @@ app.post("/todos", async (req, res) => {
       text: req.body.text ?? "Empty todo",
     },
   });
+  
+  console.log('aaaaaaa');
     
     try {
       console.log(JSON.stringify(req));
