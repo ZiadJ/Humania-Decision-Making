@@ -57,14 +57,12 @@ app.put("/todos/:id", async (req, res) => {
 app.delete("/todos/:id", async (req, res) => {
   const id = req.params.id;
   
-  if(id == '-1') {
+  if(id == '-1')
     await prisma.todo.deleteMany({});
-    return;
-  }
-    
-  await prisma.todo.delete({
-    where: { id },
-  });
+  else
+    await prisma.todo.delete({
+      where: { id },
+    });
 
   return res.send({ status: "ok" });
 });
