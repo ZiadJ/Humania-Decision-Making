@@ -1,4 +1,4 @@
-# Group decision-making system 
+# Universal Resource Management
 
 This is a prototypal system for making decisions collectively based on needs/wants vs. resource availability
 
